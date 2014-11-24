@@ -5,10 +5,9 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		@user = User.find_by(email: session_params[:email])
-		.try(:authenticate, session_params[:password])
+		@user = User.find_by(email: session_params[:email]).try(:authenticate, session_params[:password])
 		if @user
-			session[:user_id] = user.id
+			session[:id] = @user.id
 			redirect_to '/'
 		else
 			flash[:error] = "Login failed!"
