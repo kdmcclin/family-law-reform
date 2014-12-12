@@ -26,6 +26,14 @@ class ReportsController < ApplicationController
 	def destroy
 	end
 
+	def alabama
+		@reports = Report.where(:state => 'Alabama')
+	end
+
+	def alaska
+		@reports = Report.where(:state => 'Alaska')
+	end
+
 	private
 
 	def get_report
