@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  #List of states for custom routes
+
+  get '/alabama' => 'reports#alabama'
+  get '/alaska' => 'reports#alaska'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
