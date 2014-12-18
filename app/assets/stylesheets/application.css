@@ -19,3 +19,11 @@
 .custom-list-class li {
 	list-style-type: none;
 }
+
+#loginheader {
+	text-align: center;
+}
+
+#signupheader {
+	text-align: center;
+}
