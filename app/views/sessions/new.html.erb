@@ -1,0 +1,33 @@
+<div class="row">
+	<div class="large-12 columns">
+		<div class="large-6 columns" id="login">
+			<h2 id="loginheader">Login Form</h2>
+			<div class="error">
+  				<%=flash[:error]%>
+			</div>
+  			<p><%=flash[:login_message]%></p>
+			<%= form_for :session, url: login_path do |f| %>
+  				<%= f.text_field :email, placeholder: 'Email' %>
+  				<%= f.password_field :password, placeholder: "Password" %>
+	  			<%= f.submit "Log In", :class => "button radius" %>
+			<% end %>
+		</div>
+		<div class="large-6 columns" id="signup">
+			<h2 id="signupheader">Signup Form</h2>
+			<div class="error">
+      			<% if flash[:signin_error] %>
+        			<% flash[:signin_error].each do |msg| %>
+        				<%= msg %>
+        			<%end%>
+      			<%end%>
+    		</div>
+    		<%= form_for @user do |f| %>
+      			<%= f.text_field :displayname, placeholder: "Display Name" %>
+      			<%= f.text_field :email, placeholder: "Email" %>
+      			<%= f.password_field :password, placeholder: "Password" %>
+      			<%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
+      			<%= f.submit "Sign Up", :class => "button radius" %>
+		    <% end  %>
+		</div>
+	</div>
+</div>
