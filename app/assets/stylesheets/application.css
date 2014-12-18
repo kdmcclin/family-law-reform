@@ -16,3 +16,6 @@
 
  */
 
+.custom-list-class li {
+	list-style-type: none;
+}
