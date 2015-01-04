@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="large-12 columns">
+    	<br>
+    	<%= form_for @report do |f| %>
+    		<p>In which state system did this occur?</p>
+    		<%=f.select :state, options_for_select(us_states),{}, class: 'form-control'%>
+    		<p>Who is this report about?</p>
+    		<%= f.text_field :person %> <br>
+    		<p>Please describe the issue(s) that you encountered.</p>
+    		<%= f.text_area :content %>
+    		<%= f.submit "Submit Report", :class => "button radius" %>
+    	<% end %>
+    </div>
+</div>
