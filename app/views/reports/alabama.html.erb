@@ -3,8 +3,12 @@
     	<h2 class="stateheader">Alabama</h2>
     	<% @reports.each do |report| %>
     		<hr>
-    		<p>This report is about:</p> <%= report.person %>
-    		<%= report.content %>
+    		<p><span class="person">This report is about: </span><%= report.person %> </p>
+    		<%= report.content %><p></p>
+    		<p class="postdate">Posted on: <%= report.created_at.strftime("%m/%d/%Y") %>
+    		<% if report.updated_at != report.created_at%>
+    			This report was updated at: <%= report.updated_at.strftime("%m/%d/%Y")%> </p>
+    		<% end %>
     	<% end %>
     </div>
 </div>
