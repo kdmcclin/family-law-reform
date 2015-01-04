@@ -16,6 +16,7 @@ class ReportsController < ApplicationController
 		if @report.save
 			redirect_to "/#{@report.state.downcase}"
 		else
+			flash[:error] = "Please make sure that all fields are filled out."
 			redirect_to new_report_path
 		end
 	end
