@@ -1,6 +1,7 @@
 <div class="row">
     <div class="large-12 columns">
     	<h2 class="stateheader">Alabama</h2>
+        <%= paginate @reports %>
     	<% @reports.each do |report| %>
     		<hr>
     		<p><span class="person">This report is about: </span><%= report.person %> </p>
