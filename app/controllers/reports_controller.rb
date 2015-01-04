@@ -12,6 +12,12 @@ class ReportsController < ApplicationController
 
 	def create
 		@report = current_user.reports.new(report_params)
+
+		if @report.save
+			redirect_to "/#{@report.state.downcase}"
+		else
+			redirect_to new_report_path
+		end
 	end
 
 	def show
