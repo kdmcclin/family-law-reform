@@ -17,7 +17,7 @@ class ReportsController < ApplicationController
 			redirect_to "/#{@report.state.downcase}"
 		else
 			flash[:error] = "Please make sure that all fields are filled out."
-			redirect_to new_report_path
+			render :action => "new"
 		end
 	end
 
