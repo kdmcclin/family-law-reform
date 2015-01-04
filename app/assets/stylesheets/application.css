@@ -27,3 +27,9 @@
 #signupheader {
 	text-align: center;
 }
+
+.error{
+	color: red;
+	font-style: italic;
+	font-size: 1.2em;
+}
