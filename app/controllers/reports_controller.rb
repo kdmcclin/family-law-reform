@@ -34,11 +34,11 @@ class ReportsController < ApplicationController
 	end
 
 	def alabama
-		@reports = Report.where(:state => 'Alabama')
+		@reports = Report.where(:state => 'Alabama').order(updated_at: :desc)
 	end
 
 	def alaska
-		@reports = Report.where(:state => 'Alaska')
+		@reports = Report.where(:state => 'Alaska').order(updated_at: :desc)
 	end
 
 	private
