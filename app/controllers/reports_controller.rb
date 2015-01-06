@@ -29,6 +29,8 @@ class ReportsController < ApplicationController
 	end
 
 	def update
+		@report.update(report_params)
+		redirect_to report_path(@report)
 	end
 
 	def destroy
