@@ -4,7 +4,7 @@
         <%= paginate @reports %>
     	<% @reports.each do |report| %>
     		<hr>
-    		<p><span class="person">This report is about: </span><%= report.person %> </p>
+    		<p><span class="person">Person of concern: </span><%= report.person %> </p>
     		<%= report.content %><p></p>
     		<p class="postdate">Posted on: <%= report.created_at.strftime("%m/%d/%Y") %>
     		<% if report.updated_at != report.created_at%>
