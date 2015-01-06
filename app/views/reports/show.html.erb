@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="large-12 columns">
+    	<h2 class="reportheader">About this report</h2>
+    		<p><span class="person">Person of concern: </span><%= @report.person %> </p>
+    		<%= @report.content %><p></p>
+    		<p class="postdate">Posted on: <%= @report.created_at.strftime("%m/%d/%Y") %>
+    		<% if @report.updated_at != @report.created_at%>
+    			This report was updated at: <%= @report.updated_at.strftime("%m/%d/%Y")%> </p>
+    		<% end %>
+    </div>
+</div>
