@@ -4,6 +4,7 @@
         <%= paginate @reports %>
     	<% @reports.each do |report| %>
     		<hr>
+            <%= link_to "Go to this report", report_path(report) %>
     		<p><span class="person">Person of concern: </span><%= report.person %> </p>
     		<%= report.content %><p></p>
     		<p class="postdate">Posted on: <%= report.created_at.strftime("%m/%d/%Y") %><br>
