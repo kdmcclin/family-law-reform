@@ -427,8 +427,8 @@ $anchor-font-color-hover: scale-color($primary-color, $lightness: -80%);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.
-// $button-display: inline-block;
-// $button-margin-bottom: rem-calc(20);
+$button-display: inline-block;
+$button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
