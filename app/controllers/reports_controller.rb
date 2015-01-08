@@ -66,6 +66,10 @@ class ReportsController < ApplicationController
 		@reports = Report.where(:state => 'Connecticut').order(updated_at: :desc).page params[:page]
 	end
 
+	def dc
+		@reports = Report.where(:state => 'District of Columbia').order(updated_at: :desc).page params[:page]
+	end
+
 	def delaware
 		@reports = Report.where(:state => 'Delaware').order(updated_at: :desc).page params[:page]
 	end
