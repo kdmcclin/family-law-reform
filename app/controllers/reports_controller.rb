@@ -141,6 +141,103 @@ class ReportsController < ApplicationController
 	def montana
 		@reports = Report.where(:state => 'Montana').order(updated_at: :desc).page params[:page]
 	end
+	
+	def nebraska
+		@reports = Report.where(:state => 'Nebraska').order(updated_at: :desc).page params[:page]
+	end
+
+	def nevada
+		@reports = Report.where(:state => 'Nevada').order(updated_at: :desc).page params[:page]
+	end
+
+	def new_hampsire
+		@reports = Report.where(:state => 'New Hampshire').order(updated_at: :desc).page params[:page]
+	end
+
+	def new_jersey
+		@reports = Report.where(:state => 'New Jersey').order(updated_at: :desc).page params[:page]
+	end
+
+	def new_mexico
+		@reports = Report.where(:state => 'New Mexico').order(updated_at: :desc).page params[:page]
+	end
+
+	def new_york
+		@reports = Report.where(:state => 'New York').order(updated_at: :desc).page params[:page]
+	end
+
+	def north_carolina
+		@reports = Report.where(:state => 'North Carolina').order(updated_at: :desc).page params[:page]
+	end
+
+	def north_dakota
+		@reports = Report.where(:state => 'North Dakota').order(updated_at: :desc).page params[:page]
+	end
+
+	def ohio
+		@reports = Report.where(:state => 'Ohio').order(updated_at: :desc).page params[:page]
+	end
+
+	def oklahoma
+		@reports = Report.where(:state => 'Oklahoma').order(updated_at: :desc).page params[:page]
+	end
+
+	def oregon
+		@reports = Report.where(:state => 'Oregon').order(updated_at: :desc).page params[:page]
+	end
+
+	def pennsylvania
+		@reports = Report.where(:state => 'Pennsylvania').order(updated_at: :desc).page params[:page]
+	end
+
+	def rhode_island
+		@reports = Report.where(:state => 'Rhode Island').order(updated_at: :desc).page params[:page]
+	end
+
+	def south_carolina
+		@reports = Report.where(:state => 'South Carolina').order(updated_at: :desc).page params[:page]
+	end
+
+	def south_dakota
+		@reports = Report.where(:state => 'South Dakota').order(updated_at: :desc).page params[:page]
+	end
+
+	def tennessee
+		@reports = Report.where(:state => 'Tennessee').order(updated_at: :desc).page params[:page]
+	end
+
+	def texas
+		@reports = Report.where(:state => 'Texas').order(updated_at: :desc).page params[:page]
+	end
+
+	def utah
+		@reports = Report.where(:state => 'Utah').order(updated_at: :desc).page params[:page]
+	end
+
+	def vermont
+		@reports = Report.where(:state => 'Vermont').order(updated_at: :desc).page params[:page]
+	end
+
+	def virginia
+		@reports = Report.where(:state => 'Virginia').order(updated_at: :desc).page params[:page]
+	end
+
+	def washington
+		@reports = Report.where(:state => 'Washington').order(updated_at: :desc).page params[:page]
+	end
+
+	def west_virginia
+		@reports = Report.where(:state => 'West Virginia').order(updated_at: :desc).page params[:page]
+	end
+
+	def wisconsin
+		@reports = Report.where(:state => 'Wisconsin').order(updated_at: :desc).page params[:page]
+	end
+
+	def wyoming
+		@reports = Report.where(:state => 'Wyoming').order(updated_at: :desc).page params[:page]
+	end
+
 	private
 
 	def get_report
