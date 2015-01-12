@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
 	validates :password,	length: { minimum: 3 },
                         	confirmation: true,
                         	presence: true
+
+    def is_admin?
+    	self.id == 1
+    end
 end
