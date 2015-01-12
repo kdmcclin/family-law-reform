@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20141121152317) do
   enable_extension "plpgsql"
 
   create_table "reports", force: true do |t|
-    t.string   "state"
-    t.string   "person"
-    t.text     "content"
+    t.string   "state",      null: false
+    t.string   "person",     null: false
+    t.text     "content",    null: false
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
