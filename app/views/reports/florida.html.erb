@@ -11,7 +11,7 @@
     		<% if report.updated_at != report.created_at%>
     			Updated on: <%= report.updated_at.strftime("%m/%d/%Y")%> </p>
     		<% end %>
-            <% if report.user == @current_user %>
+            <% if report.user == @current_user || @current_user.is_admin? %>
                 <%= button_to "Delete", report, method: :delete, action: 'destroy' , :class => "button radius"%>
                 <%= button_to "Edit", edit_report_path(report), method: :get, :class => "button radius" %>
             <% end %>
