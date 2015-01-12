@@ -11,7 +11,7 @@
     <ul class="right">
       <li><a href="/links">Helpful Links</a></li>
       <li><a href="/reports">Reports by State</a></li>
-      <% if !session[:id] %>
+      <% if !session[:user_id] %>
         <li><a href="/login">Login/Signup</a></li>
       <% else %>
         <li><a href="/reports/new">Create a Report</a></li>

@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
 	def create
 		@user = User.find_by(email: session_params[:email]).try(:authenticate, session_params[:password])
 		if @user
-			session[:id] = @user.id
-			redirect_to '/'
+			session[:user_id] = @user.id
+			redirect_to root_path
 		else
 			flash[:error] = "Login failed!"
 			redirect_to login_path
@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
 	def destroy
 		session.clear
-		redirect_to '/'
+		redirect_to root_path
 	end
 
 	private
