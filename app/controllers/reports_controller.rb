@@ -1,7 +1,6 @@
 class ReportsController < ApplicationController
 	
 	before_action :get_report, only: [:show, :edit, :update, :destroy]
-	before_action :get_current_user
 
 	def index
 		@reports = Report.all
@@ -246,10 +245,6 @@ class ReportsController < ApplicationController
 
 	def get_report
 		@report = Report.find(params[:id])
-	end
-
-	def get_current_user
-		@current_user = current_user
 	end
 
 	def report_params
