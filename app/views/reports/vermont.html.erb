@@ -1,20 +1,6 @@
 <div class="row">
     <div class="large-12 columns">
     	<h2 class="stateheader">Vermont</h2>
-        <%= paginate @reports %>
-    	<% @reports.each do |report| %>
-    		<hr>
-            <%= link_to "Go to this report", report_path(report) %>
-    		<p><span class="person">Person of concern: </span><%= report.person %> </p>
-    		<%= report.content %><p></p>
-    		<p class="postdate">Posted on: <%= report.created_at.strftime("%m/%d/%Y") %><br>
-    		<% if report.updated_at != report.created_at%>
-    			Updated on: <%= report.updated_at.strftime("%m/%d/%Y")%> </p>
-    		<% end %>
-            <% if report.user == current_user || current_user.is_admin? %>
-                <%= button_to "Delete", report, method: :delete, action: 'destroy' , :class => "button radius"%>
-                <%= button_to "Edit", edit_report_path(report), method: :get, :class => "button radius" %>
-            <% end %>
-    	<% end %>
+        <%= render partial: 'report_form' %>
     </div>
 </div>
