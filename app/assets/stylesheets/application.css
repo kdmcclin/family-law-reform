@@ -15,6 +15,9 @@
  *= require foundation_and_overrides
 
  */
+body {
+	background-color: #DAE3E7;
+}
 
 .custom-list-class li {
 	list-style-type: none;
