@@ -16,7 +16,16 @@
 
  */
 body {
-	background-color: #DAE3E7;
+	background-color: #E5F1D3;
+}
+
+nav {
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.logo{
+	padding-left: 20px;
+	padding-top: 1px;
 }
 
 .custom-list-class li {
