@@ -85,8 +85,11 @@ $include-html-global-classes: $include-html-classes;
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 // We use these to define default font stacks
+$google-font: Montserrat;
+$google-font2: Lato;
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
@@ -126,7 +129,7 @@ $black       : #000000;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: $google-font2;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -195,7 +198,7 @@ $black       : #000000;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $google-font;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
