@@ -95,8 +95,8 @@ $google-font2: Lato;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
 
 // We use these as default colors throughout
 $primary-color: #008CBA;
@@ -199,7 +199,7 @@ $body-font-family: $google-font2;
 
 // We use these to control header font styles
 $header-font-family: $google-font;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: $font-weight-bold;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;
