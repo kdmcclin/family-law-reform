@@ -16,11 +16,19 @@
 
  */
 body {
-	background-color: #E5F1D3;
+	background-color: #faf6d5;
 }
 
 nav {
 	box-shadow: 2px 2px 5px #888888;
+}
+
+nav.top-bar{
+	background: linear-gradient(#C4CC83, #9ba544);
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	background: linear-gradient(#C4CC83, #9ba544);
 }
 
 .logo{
