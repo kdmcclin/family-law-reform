@@ -19,6 +19,18 @@ body {
 	background-color: #faf6d5;
 }
 
+a {
+	color: #74955E;
+}
+
+a:hover{
+	color: #1B322A;
+}
+
+a:visited{
+	color: #2C4F39;
+}
+
 nav {
 	box-shadow: 2px 2px 5px #888888;
 }
