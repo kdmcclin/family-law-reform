@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="large-12 columns">
 		<div class="large-6 columns" id="login">
-			<h2 id="loginheader">Login Form</h2>
+			<h2 id="loginheader">Login</h2>
 			<div class="error">
   				<%=flash[:error]%>
 			</div>
@@ -13,7 +13,7 @@
 			<% end %>
 		</div>
 		<div class="large-6 columns" id="signup">
-			<h2 id="signupheader">Signup Form</h2>
+			<h2 id="signupheader">Signup</h2>
 			<div class="error">
       			<% if flash[:signin_error] %>
         			<% flash[:signin_error].each do |msg| %>
