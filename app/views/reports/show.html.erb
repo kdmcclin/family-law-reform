@@ -9,8 +9,10 @@
     		<% end %>
     		<% if current_user %>
         		<% if @report.user == current_user || current_user.is_admin? %>
-            		<%= button_to "Edit", edit_report_path(@report), method: :get, :class => "button radius" %>
-            		<%= button_to "Delete", @report, method: :delete, action: 'destroy' , :class => "button radius"%>
+            		<ul id="buttons">
+                        <li class="e-button"><%= button_to "Edit", edit_report_path(@report), method: :get, :class => "button radius" %></li>
+            		    <li class="d-button"><%= button_to "Delete", @report, method: :delete, action: 'destroy' , :class => "button radius"%></li>
+                    </ul>
         		<% end %>
     		<% end %>
     </div>

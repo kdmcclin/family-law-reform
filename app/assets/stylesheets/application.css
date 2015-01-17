@@ -75,3 +75,15 @@ nav.pagination{
 .person{
 	font-weight: bold;
 }
+
+.e-button {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: -17px;
+}
+
+.d-button {
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 30px;
+}
