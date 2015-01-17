@@ -37,6 +37,10 @@ nav.top-bar{
 
 }
 
+nav.pagination{
+	text-align: center;
+}
+
 .top-bar-section li:not(.has-form) a:not(.button){
 	background: linear-gradient(#C4CC83, #9ba544);
 }
