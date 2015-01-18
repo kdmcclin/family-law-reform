@@ -15,4 +15,9 @@
 //= require foundation
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); 
+
+	$("#user_displayname").click(function(){
+		$("#signupheader").append("<p class='alert'>To protect user anonymity for reports we cannot reset your password if you forget it.  Please remember it or keep it in safe place.</p>");
+	})
+});
