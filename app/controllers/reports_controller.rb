@@ -322,6 +322,7 @@ class ReportsController < ApplicationController
 			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
 		else
 			@reports = Report.where(:state => 'Ohio').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def oklahoma
