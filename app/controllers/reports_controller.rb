@@ -269,7 +269,7 @@ class ReportsController < ApplicationController
 		end
 	end
 
-	def new_hampsire
+	def new_hampshire
 		if params[:search]
 			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
 		else
