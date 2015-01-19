@@ -46,203 +46,402 @@ class ReportsController < ApplicationController
 	end
 
 	def alaska
-		@reports = Report.where(:state => 'Alaska').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Alaska').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def arizona
-		@reports = Report.where(:State => 'Arizona').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:State => 'Arizona').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def arkansas
-		@reports = Report.where(:state => 'Arkansas').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Arkansas').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def california
-		@reports = Report.where(:state => 'California').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'California').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def colorado
-		@reports = Report.where(:state => 'Colorado').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Colorado').order(updated_at: :desc).page params[:page]
+		end
 	end
 	
 	def connecticut
-		@reports = Report.where(:state => 'Connecticut').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Connecticut').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def dc
-		@reports = Report.where(:state => 'District of Columbia').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'District of Columbia').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def delaware
-		@reports = Report.where(:state => 'Delaware').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Delaware').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def florida
-		@reports = Report.where(:state => 'Florida').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Florida').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def georgia
-		@reports = Report.where(:state => 'Georgia').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Georgia').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def hawaii
-		@reports = Report.where(:state => 'Hawaii').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Hawaii').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def idaho
-		@reports = Report.where(:state => 'Idaho').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Idaho').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def illinois
-		@reports = Report.where(:state => 'Illinois').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Illinois').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def indiana
-		@reports = Report.where(:state => 'Indiana').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Indiana').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def iowa
-		@reports = Report.where(:state => 'Iowa').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Iowa').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def kansas
-		@reports = Report.where(:state => 'Kansas').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Kansas').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def kentucky
-		@reports = Report.where(:state => 'Kentucky').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Kentucky').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def louisiana
-		@reports = Report.where(:state => 'Louisiana').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Louisiana').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def maine
-		@reports = Report.where(:state => 'Maine').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Maine').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def maryland
-		@reports = Report.where(:state => 'Maryland').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Maryland').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def massachusetts
-		@reports = Report.where(:state => 'Massachusetts').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Massachusetts').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def michigan
-		@reports = Report.where(:state => 'Michigan').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Michigan').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def minnesota
-		@reports = Report.where(:state => 'Minnesota').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Minnesota').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def mississippi
-		@reports = Report.where(:state => 'Mississippi').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Mississippi').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def missouri
-		@reports = Report.where(:state => 'Missouri').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Missouri').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def montana
-		@reports = Report.where(:state => 'Montana').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Montana').order(updated_at: :desc).page params[:page]
+		end
 	end
 	
 	def nebraska
-		@reports = Report.where(:state => 'Nebraska').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Nebraska').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def nevada
-		@reports = Report.where(:state => 'Nevada').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Nevada').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def new_hampsire
-		@reports = Report.where(:state => 'New Hampshire').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'New Hampshire').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def new_jersey
-		@reports = Report.where(:state => 'New Jersey').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'New Jersey').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def new_mexico
-		@reports = Report.where(:state => 'New Mexico').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'New Mexico').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def new_york
-		@reports = Report.where(:state => 'New York').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'New York').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def north_carolina
-		@reports = Report.where(:state => 'North Carolina').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'North Carolina').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def north_dakota
-		@reports = Report.where(:state => 'North Dakota').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'North Dakota').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def ohio
-		@reports = Report.where(:state => 'Ohio').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Ohio').order(updated_at: :desc).page params[:page]
 	end
 
 	def oklahoma
-		@reports = Report.where(:state => 'Oklahoma').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Oklahoma').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def oregon
-		@reports = Report.where(:state => 'Oregon').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Oregon').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def pennsylvania
-		@reports = Report.where(:state => 'Pennsylvania').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Pennsylvania').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def rhode_island
-		@reports = Report.where(:state => 'Rhode Island').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Rhode Island').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def south_carolina
-		@reports = Report.where(:state => 'South Carolina').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'South Carolina').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def south_dakota
-		@reports = Report.where(:state => 'South Dakota').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'South Dakota').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def tennessee
-		@reports = Report.where(:state => 'Tennessee').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Tennessee').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def texas
-		@reports = Report.where(:state => 'Texas').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Texas').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def utah
-		@reports = Report.where(:state => 'Utah').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Utah').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def vermont
-		@reports = Report.where(:state => 'Vermont').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Vermont').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def virginia
-		@reports = Report.where(:state => 'Virginia').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Virginia').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def washington
-		@reports = Report.where(:state => 'Washington').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Washington').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def west_virginia
-		@reports = Report.where(:state => 'West Virginia').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'West Virginia').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def wisconsin
-		@reports = Report.where(:state => 'Wisconsin').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Wisconsin').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	def wyoming
-		@reports = Report.where(:state => 'Wyoming').order(updated_at: :desc).page params[:page]
+		if params[:search]
+			@reports = Report.search(params[:search]).order(updated_at: :desc).page params[:page]
+		else
+			@reports = Report.where(:state => 'Wyoming').order(updated_at: :desc).page params[:page]
+		end
 	end
 
 	private
