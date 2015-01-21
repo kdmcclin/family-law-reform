@@ -80,6 +80,14 @@ nav.pagination{
 	text-shadow: 2px 2px 5px #888888;
 }
 
+#linkheader{
+	text-shadow: 2px 2px 5px #888888;
+}
+
+.alphaheader{
+	text-shadow: 2px 2px 5px #888888;
+}
+
 .e-button {
 	list-style-type: none;
 	display: inline-block;
