@@ -1,6 +1,6 @@
 <div class="row">
     <div class="large-12 columns">
-    	<h2 class="stateheader">Florida</h2>
+    	<a href="/florida"><h2 class="stateheader">Florida</h2></a>
     	<% if !@reports.empty? %>
     		<%= form_tag(florida_path, :method => "get", id: "search-form") do %>
 	  			<%= text_field_tag :search, params[:search], placeholder: "Search for a Person Within This State" %>
