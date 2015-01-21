@@ -1,7 +1,7 @@
 <%= paginate @reports %>
 
 <% if @reports.empty? %>
-    <p class="empty_reports">There are no reports for this state.  Please click "Create a Report" if you would like to create one.</p>
+    <p class="empty_reports">There are no reports for this state.  Please log in and click "Create a Report" if you would like to create one.</p>
 <% end %>
 
 <% @reports.each do |report| %>
