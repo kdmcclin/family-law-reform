@@ -1,8 +1,8 @@
 <div class="row">
     <div class="large-12 columns">
-    	<a href="/west_virginia"><h2 class="stateheader">West Virginia</h2></a>
+    	<a href="/west virginia"><h2 class="stateheader">West Virginia</h2></a>
     	<% if !@reports.empty? %>
-    		<%= form_tag(west_virginia_path, :method => "get", id: "search-form") do %>
+    		<%= form_tag("/west virginia", :method => "get", id: "search-form") do %>
 		  		<%= text_field_tag :search, params[:search], placeholder: "Search for a Person Within This State" %>
   				<%= submit_tag "Search", :class => "button radius" %>
 			<% end %>
