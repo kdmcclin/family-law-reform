@@ -22,8 +22,8 @@ rails s
 This app can be easily modified to include such things as: emails to users (sign up confirmation, password request, and so on), a direct messaging feature for users to communicate with each other without sharing emails, and a more robust search functionality.  It all depends on the direction in which the organization chooses to go with this.
 
 ##Screenshots
-![Home Mobile View](/screenshots/homem1.png)
+![Home Mobile View](/screenshots/homem1.png)  
 This is a mobile view of the home screen, with placeholder text and images.
 
-![Alabama Page](/screenshots/alabama3.png)
+![Alabama Page](/screenshots/alabama3.png)  
 This is a view of the Alabama reports page, with placeholder reports, showing the search feature.
