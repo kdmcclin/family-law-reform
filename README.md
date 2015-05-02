@@ -20,3 +20,7 @@ rails s
 
 ##Future Work
 This app can be easily modified to include such things as: emails to users (sign up confirmation, password request, and so on), a direct messaging feature for users to communicate with each other without sharing emails, and a more robust search functionality.  It all depends on the direction in which the organization chooses to go with this.
+
+##Screenshots
+![Home Mobile View](/screenshots/homem1.png)
+![Alabama Page](/screenshots/alabama3.png)
