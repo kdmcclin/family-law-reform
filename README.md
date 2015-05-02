@@ -23,4 +23,7 @@ This app can be easily modified to include such things as: emails to users (sign
 
 ##Screenshots
 ![Home Mobile View](/screenshots/homem1.png)
+This is a mobile view of the home screen, with placeholder text and images.
+
 ![Alabama Page](/screenshots/alabama3.png)
+This is a view of the Alabama reports page, with placeholder reports, showing the search feature.
